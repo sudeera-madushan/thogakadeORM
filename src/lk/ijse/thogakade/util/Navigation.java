@@ -22,11 +22,11 @@ public class Navigation {
 
         switch (route) {
             case CUSTOMER:
-                window.setTitle("Customer Manage Form");
+                window.setTitle("CustomerDTO Manage Form");
                 initUI("CustomerForm.fxml");
                 break;
             case PLACE_ORDER:
-                window.setTitle("Place Order Form");
+                window.setTitle("Place OrderDTO Form");
                 initUI("PlaceOrderForm.fxml");
                 break;
             case DASHBOARD:

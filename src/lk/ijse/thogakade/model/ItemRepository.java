@@ -20,7 +20,7 @@ public class ItemRepository {
     private Session session= FactoryConfiguration.factoryConfiguration.getSession();
 
     public static ArrayList<String> loadItemCodes() throws SQLException, ClassNotFoundException {
-        String sql = "SELECT code FROM Item";
+        String sql = "SELECT code FROM ItemDTO";
         ResultSet result = CrudUtil.execute(sql);
 
         ArrayList<String> codeList = new ArrayList<>();

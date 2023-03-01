@@ -67,7 +67,7 @@ public class CustomerFormController {
             boolean isAdded = customerRep.saveCustomer(customer);
 
             if (isAdded) {
-                new Alert(Alert.AlertType.CONFIRMATION, "Customer Added!").show();
+                new Alert(Alert.AlertType.CONFIRMATION, "CustomerDTO Added!").show();
             } else {
                 new Alert(Alert.AlertType.WARNING, "Something happened!").show();
             }

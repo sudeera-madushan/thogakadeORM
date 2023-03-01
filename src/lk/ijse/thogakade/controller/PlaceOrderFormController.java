@@ -165,9 +165,9 @@ public class PlaceOrderFormController implements Initializable {
                 /* to clear table */
                 obList.clear();
                 loadNextOrderId();
-                new Alert(Alert.AlertType.CONFIRMATION, "Order Placed!").show();
+                new Alert(Alert.AlertType.CONFIRMATION, "OrderDTO Placed!").show();
             } else {
-                new Alert(Alert.AlertType.ERROR, "Order Not Placed!").show();
+                new Alert(Alert.AlertType.ERROR, "OrderDTO Not Placed!").show();
             }
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);

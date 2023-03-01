@@ -43,7 +43,7 @@ public class CustomerRepository {
     }
 
     public static ArrayList<String> loadCustomerIds() throws SQLException, ClassNotFoundException {
-        String sql = "SELECT id FROM Customer";
+        String sql = "SELECT id FROM CustomerDTO";
         ResultSet result = CrudUtil.execute(sql);
 
         ArrayList<String> idList = new ArrayList<>();

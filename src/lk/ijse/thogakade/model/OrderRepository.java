@@ -30,7 +30,7 @@ public class OrderRepository {
     }
 
     public static String generateNextOrderId() throws SQLException, ClassNotFoundException {
-        String sql = "SELECT id FROM Order ORDER BY id DESC LIMIT 1";
+        String sql = "SELECT id FROM OrderDTO ORDER BY id DESC LIMIT 1";
         ResultSet result = CrudUtil.execute(sql);
 
         if (result.next()) {
